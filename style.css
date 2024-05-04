@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+}
+header{
+    height: 10vh;
+    background-color:transparent;
+
+}
+nav{
+    float: left;
+    width: 15%;
+    height: 90vh;
+    background-color:transparent;
+    
+}
+section{
+    height: 100%;
+    width: 85%;
+    float: left;
+    background-color:transparent;
+}
+iframe{
+    border: none;
+    width: 100%;
+    height: 100%;
+    
+}
+ul{
+    list-style: none;
+    
+    position: relative;
+    top: 10%; 
+}
+h1{
+    color: aliceblue;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a{
+    width: 300px;
+    height: 90px;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: linear-gradient(45deg,#3023AE 0%,#FF0099 100%);
+    padding: 10px;
+    border-radius:82% 18% 69% 31% / 38% 63% 37% 62%  ;
+    color: aliceblue;
+}
+li{
+    padding: 20px 0;
+}
+body{
+    background-color: #000022;
+}
+a:hover {
+    background-image: linear-gradient(45deg,lightgreen 0%,rgb(36, 33, 125) );
+  }
+  
+  a:active {
+    background-image: linear-gradient(45deg,hotpink 0%,rgb(36, 33, 125) ); ;
+  }
+
+@keyframes morph {
+    0% {
+        border-radius: 40% 60% 60% 40%/70% 30%
+    }
+
+    to {
+        border-radius: 40% 60%
+    }
+}
+@keyframes spin {
+    to {
+        transform: rotate(1turn)
+    }
+}
+fieldset{
+    width: 400px;
+    position: relative;
+    
+}
+
+.form1{
+    position: fixed;
+    top:30%;
+    left: 38%;
+    border-radius: 8px;
+    background-image: linear-gradient(358deg, #847b2c 10%, #182848 62%);
+    
+}
+.container:before,.container:after {
+    content: "";
+    width: 70vmax;
+    height: 70vmax;
+    position: absolute;
+    background: rgba(255,255,255,.07);
+    left: -20vmin;
+    top: -20vmin;
+    animation: morph 15s linear infinite alternate,spin 20s linear infinite;
+    z-index: 1;
+    will-change: border-radius,transform;
+    transform-origin: 55% 55%;
+    pointer-events: none
+}
+.container {
+    height: 100vh ;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+    overflow: hidden;
+    position: relative
+}
+td{ 
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    border: 1px solid black;
+}
+.valid{
+    background-color: rgba(0, 128, 0, 0.664);
+}
+.nvalid{
+    background-color: rgba(255, 0, 0, 0.664);
+}
+.knvalid{
+    background-color: rgba(255, 255, 0, 0.664);
+}
+th{
+    padding-top: 5px;
+    padding-right:  269px;
+    padding-bottom: 15px;
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid rgb(7, 6, 6);
+}
+.table{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 3px solid #73AD21;
+    background-color: rgba(240, 248, 255, 0.637);
+
+}
+.container:after {
+    width: 70vmin;
+    height: 70vmin;
+    left: auto;
+    right: -10vmin;
+    top: auto;
+    bottom: 0;
+    animation: morph 10s linear infinite alternate,spin 26s linear infinite reverse;
+    transform-origin: 20% 20%
+}
+
+.kls{
+    display: flex;
+    height: 20vh;
+    justify-content: space-evenly;
+    align-items: center;
+   
+}
+
+/* CSS */
+.btn {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 20px 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.btn:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.btn:main,
+.btn:focus {
+  user-select: auto;
+}
+
+.btn:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.btn:disabled {
+  cursor: auto;
+}
+
+.btn:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+
+   legend{
+    color: #e8e8e8;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   }
+   
